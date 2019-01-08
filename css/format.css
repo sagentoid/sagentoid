@@ -1,0 +1,60 @@
+﻿body {background:#000000; text-align:center}
+
+a {color:white}
+
+h1 {
+  color: white;
+  font-family:Monotype Corsiva; font-weight:bold; font-size:30pt
+
+}
+
+h2 {
+  color: white;
+  font-family:Monotype Corsiva; font-weight:bold; font-size:14pt
+}
+
+p {
+  color: white;
+  font-family:Monotype Corsiva; font-size:20pt
+}
+
+li {
+  color: white;
+  font-family:Monotype Corsiva; font-size:10pt
+}
+
+input {
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none
+}
+
+input[type=number]:focus {
+  border: 3px solid #555;
+  border-radius: 4px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#num
+  {
+    color: black;
+    font-size: 20pt;
+    height: 45px;
+    width: 50px;
+  }
+
+#button
+   {
+     font-size: 20pt;
+     height: 50px;
+     width: 50px;
+   }
