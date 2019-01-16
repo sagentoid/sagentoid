@@ -1,60 +1,72 @@
-﻿body {background:#000000; text-align:center}
-
-a {color:white}
-
-h1 {
-  color: white;
-  font-family:Monotype Corsiva; font-weight:bold; font-size:30pt
-
+﻿body {
+  background: 
+  url("../img/logo.png"),
+  url("../img/books.jpg"),
+  linear-gradient(to left, rgba(208, 235, 238, 0.822),
+  rgba(171, 143, 248, 0.699), rgba(150, 179, 179, 0.459));
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position-x: 95%, 0;
+  background-position-y: 95%, 0%;
+  background-size: 30%, 25%, 100%;
+  text-align: left;
+  padding: 0 25% 20% 27%;
+  font-family: 'Courier New', Courier, monospace;
+  background-blend-mode: color-burn, normal;
+  background-attachment: fixed;
 }
 
-h2 {
-  color: white;
-  font-family:Monotype Corsiva; font-weight:bold; font-size:14pt
+.mainbody {
+  background-color: rgba(247, 240, 246, 0.288);
+  filter:alpha(opacity=100);-moz-opacity:1;opacity: 1;
+  font-size: 110%;
+  text-indent: .25in;
+ }
+
+a {
+  color:rgb(25, 0, 255);
 }
 
-p {
-  color: white;
-  font-family:Monotype Corsiva; font-size:20pt
+input[type=number]:hover, :focus {
+  border: 3px solid rgb(46, 45, 45);
 }
 
-li {
-  color: white;
-  font-family:Monotype Corsiva; font-size:10pt
-}
-
-input {
-  border: 3px solid #ccc;
-  border-radius: 4px;
-  padding: 15px;
-  text-align: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  outline: none
-}
-
-input[type=number]:focus {
-  border: 3px solid #555;
-  border-radius: 4px
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-#num
-  {
-    color: black;
-    font-size: 20pt;
-    height: 45px;
-    width: 50px;
-  }
+input {
+  border: 3px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: invert;
+  color: black;
+  font-size: 20pt;
+  height: 20px;
+  width: 175px;
+  border-radius: 6px;
+}
 
-#button
-   {
-     font-size: 20pt;
-     height: 50px;
-     width: 50px;
-   }
+#myBtn {
+  background-color: black;
+  color: red;
+  border-color: red;
+  font-size: 20pt;
+  height: 50px;
+  width: auto;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  border-radius: 6px
+}
+
+#myBtn:hover {
+  border-color: green;
+  color: green;
+}
+
+#answerDisp {
+font-weight: bold;
+font-size: 15pt;
+}

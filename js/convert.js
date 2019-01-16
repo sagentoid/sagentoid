@@ -1,13 +1,27 @@
+function enter() 
+{
+	// Get the input field
+var input = document.getElementById("num");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) 
+	{
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.getElementById("myBtn").click();
+  }
+	});
+}
+
 function validate()
 {
 var x = document.getElementById("num").value;
 if (x == "")
 	{
 	alert("You haven't entered anything");
-	}
-else if	(x = isNaN(x))
-	{
-	alert("Entry must be a whole numerical value");
 	}
 else
 	{
