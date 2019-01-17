@@ -28,6 +28,7 @@ a {
 
 input[type=number]:hover, :focus {
   border: 3px solid rgb(46, 45, 45);
+  cursor: pointer;
 }
 
 input[type=number]::-webkit-inner-spin-button {
