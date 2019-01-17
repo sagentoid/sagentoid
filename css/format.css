@@ -53,7 +53,6 @@ input {
 #myBtn {
   background-color: black;
   color: red;
-  border-color: red;
   font-size: 20pt;
   height: 50px;
   width: auto;
@@ -64,7 +63,6 @@ input {
 }
 
 #myBtn:hover {
-  border-color: green;
   color: green;
   cursor: pointer;
   border-radius: 10%; 
