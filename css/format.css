@@ -1,26 +1,52 @@
-﻿body {
+﻿/*
+body {
+
   background: 
-  url("../img/logo.png"),
-  url("../img/books.jpg"),
-  linear-gradient(to left, rgba(208, 235, 238, 0.822),
-  rgba(0, 0, 139, 0.699), rgba(150, 179, 179, 0.459));
-  background-repeat: no-repeat, no-repeat, repeat;
-  background-position-x: 95%, 0;
-  background-position-y: 95%, 0%;
-  background-size: 30%, 25%, 100%;
-  text-align: left;
-  padding: 0 25% 20% 27%;
-  font-family: 'Courier New', Courier, monospace;
-  background-blend-mode: color-burn, normal;
-  background-attachment: fixed;
+    linear-gradient(270deg, rgba(39, 216, 69, 0.822), rgba(29, 29, 214, 0.699), rgba(3, 233, 250, 0.459));
+}
+*/
+.spectrumBackground {
+
+    background-image: url(../img/logo.png);
+    background: linear-gradient(270deg, #fc115f, #084081, #4d6fb8, #7697b3, #816a39, #916021, #ed17a6);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: 500% 500%;
+    -webkit-animation: moveGradient 30s ease infinite;
+    -moz-animation: moveGradient 30s ease infinite;
+    -o-animation: moveGradient 30s ease infinite;
+    animation: moveGradient 30s ease infinite;
+    text-align: left;
+    padding: 0 25% 20% 27%;
+  
+}
+
+@keyframes moveGradient { 
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@-webkit-keyframes moveGradient {
+    0%{background-position:100% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:100% 0%}
+}
+@-moz-keyframes moveGradient {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@-o-keyframes moveGradient {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
 }
 
 .mainbody {
-  background-color: rgba(247, 240, 246, 0.288);
-  filter:alpha(opacity=100);-moz-opacity:1;opacity: 1;
   font-size: 110%;
   text-indent: .25in;
- }
+}
 
 a {
   color:rgb(25, 0, 255);
